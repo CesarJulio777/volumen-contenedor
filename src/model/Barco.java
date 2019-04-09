@@ -29,9 +29,22 @@ public class Barco{
 		double vol2 = c2.calcularVolumendeContenedor();
 		double vol3 = c3.calcularVolumendeContenedor();
 		
-		average = ((vol1+vol2+vol3)/3);
+		average = (vol1+vol2+vol3)/3;
 		
 		return average; 
+	}
+	
+	public double calculateTotalVolume(){
+		double total;
+		
+		double vol1 = c1.calcularVolumendeContenedor();
+		double vol2 = c2.calcularVolumendeContenedor();
+		double vol3 = c3.calcularVolumendeContenedor();
+		
+		total = vol1+vol2+vol3;
+		
+		return total;
+		
 	}
 	
 }
